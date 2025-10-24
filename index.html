@@ -1,3 +1,4 @@
+<<<<<<< HEAD:index.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -636,4 +637,644 @@
         </div>
     </footer>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Desk - Power Apps Ticket Management | Volhard Consulting</title>
+    <meta name="description" content="One Desk: Affordable, customizable IT ticketing built on Microsoft Power Platform. Stop overpaying for bloated helpdesk software.">
+    <meta name="keywords" content="One Desk, Power Apps ticket management, Microsoft Power Platform ticketing, IT helpdesk automation, affordable ticket system">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: #062635;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        header {
+            background-color: #0c3c56;
+            padding: 24px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .header-content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .logo {
+            width: 100px;
+            height: 100px;
+        }
+
+        .header-text {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #ffffff;
+        }
+
+        .subheader {
+            font-size: 18px;
+            color: #ffffff;
+            opacity: 0.9;
+        }
+
+        .hero {
+            padding: 80px 0 60px;
+            text-align: center;
+        }
+
+        .hero-hook {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #0177c0;
+            color: #ffffff;
+            padding: 18px 48px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 20px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(1, 119, 192, 0.4);
+        }
+
+        .cta-button:hover {
+            background-color: #0191db;
+            box-shadow: 0 6px 25px rgba(1, 119, 192, 0.5);
+            transform: translateY(-2px);
+        }
+
+        .comparison-section {
+            background-color: #0c3c56;
+            padding: 80px 0;
+        }
+
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .comparison-column {
+            background-color: #062635;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .comparison-column.highlight {
+            border: 2px solid #0177c0;
+            box-shadow: 0 4px 30px rgba(1, 119, 192, 0.3);
+        }
+
+        .comparison-title {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 32px;
+            text-align: center;
+        }
+
+        .comparison-title.negative {
+            color: #ff6b6b;
+        }
+
+        .comparison-title.positive {
+            color: #0177c0;
+        }
+
+        .comparison-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 24px;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .comparison-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .icon {
+            flex-shrink: 0;
+            margin-top: 2px;
+            width: 24px;
+            height: 24px;
+        }
+
+        .icon svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .demo-section {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .demo-section h2 {
+            font-size: 36px;
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+
+        .app-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+            overflow: hidden;
+            background-color: #0c3c56;
+            padding: 8px;
+        }
+
+        .app-container iframe {
+            width: 100%;
+            height: 700px;
+            border: none;
+            border-radius: 8px;
+            display: block;
+        }
+
+        .video-section {
+            background-color: #0c3c56;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .video-section h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+            font-weight: 700;
+        }
+
+        .video-container {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .cta-section {
+            background-color: #0c3c56;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 40px;
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+
+        .cta-section .subtitle {
+            font-size: 20px;
+            margin-bottom: 48px;
+            opacity: 0.9;
+        }
+
+        .form-container {
+            background-color: #062635;
+            border-radius: 8px;
+            padding: 48px;
+            max-width: 500px;
+            margin: 0 auto;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .form-group {
+            margin-bottom: 24px;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            background-color: #0c3c56;
+            color: #ffffff;
+            border: 2px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: #0177c0;
+        }
+
+        .form-group input::placeholder {
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        .submit-button {
+            width: 100%;
+            background-color: #0177c0;
+            color: #ffffff;
+            padding: 16px;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(1, 119, 192, 0.3);
+        }
+
+        .submit-button:hover {
+            background-color: #0191db;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(1, 119, 192, 0.4);
+        }
+
+        footer {
+            background-color: #0c3c56;
+            padding: 40px 0 24px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 24px;
+            margin-bottom: 24px;
+        }
+
+        .footer-brand {
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 32px;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 15px;
+            opacity: 0.8;
+            transition: all 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            opacity: 1;
+            color: #0177c0;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 14px;
+            opacity: 0.7;
+        }
+
+        @media (max-width: 768px) {
+            .logo {
+                width: 120px;
+                height: 120px;
+            }
+
+            h1 {
+                font-size: 26px;
+            }
+
+            .subheader {
+                font-size: 16px;
+            }
+
+            .hero {
+                padding: 60px 0 40px;
+            }
+
+            .hero-hook {
+                font-size: 20px;
+            }
+
+            .cta-button {
+                padding: 16px 36px;
+                font-size: 18px;
+            }
+
+            .comparison-section {
+                padding: 60px 0;
+            }
+
+            .comparison-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            .comparison-column {
+                padding: 32px 24px;
+            }
+
+            .comparison-title {
+                font-size: 24px;
+            }
+
+            .comparison-item {
+                font-size: 16px;
+            }
+
+            .demo-section {
+                padding: 60px 0;
+            }
+
+            .demo-section h2 {
+                font-size: 28px;
+            }
+
+            .app-container iframe {
+                height: 500px;
+            }
+
+            .video-section {
+                padding: 60px 0;
+            }
+
+            .video-section h2 {
+                font-size: 28px;
+            }
+
+            .cta-section {
+                padding: 60px 0;
+            }
+
+            .cta-section h2 {
+                font-size: 32px;
+            }
+
+            .cta-section .subtitle {
+                font-size: 18px;
+            }
+
+            .form-container {
+                padding: 32px 24px;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-links {
+                justify-content: center;
+                gap: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <img src="onedesk-logo.png" alt="One Desk Logo" class="logo">
+                <div class="header-text">
+                    <h1>One Desk</h1>
+                    <p class="subheader">IT ticketing that's lean, fast, and built on Microsoft Power Platform</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-hook">
+                Stop overpaying for bloated helpdesk software that takes months to deploy.
+            </div>
+            <a href="#get-started" class="cta-button">Try for Free</a>
+        </div>
+    </section>
+
+    <section class="comparison-section">
+        <div class="container">
+            <div class="comparison-grid">
+                <div class="comparison-column">
+                    <h2 class="comparison-title negative">Other Systems</h2>
+                    <div class="comparison-item">
+                        <span class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#ff6b6b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                        </span>
+                        <span>R5,000 / month recurring costs</span>
+                    </div>
+                    <div class="comparison-item">
+                        <span class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#ff6b6b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                        </span>
+                        <span>Generic templates that don't fit your workflow</span>
+                    </div>
+                    <div class="comparison-item">
+                        <span class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#ff6b6b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                        </span>
+                        <span>Random tech stack you didn't choose</span>
+                    </div>
+                    <div class="comparison-item">
+                        <span class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#ff6b6b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                        </span>
+                        <span>Months of implementation with consultants</span>
+                    </div>
+                    <div class="comparison-item">
+                        <span class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#ff6b6b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                        </span>
+                        <span>Vendor lock-in and upgrade fees</span>
+                    </div>
+                </div>
+
+                <div class="comparison-column highlight">
+                    <h2 class="comparison-title positive">One Desk</h2>
+                    <div class="comparison-item">
+                        <span class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#0177c0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </span>
+                        <span>R25,000 once-off investment</span>
+                    </div>
+                    <div class="comparison-item">
+                        <span class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#0177c0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </span>
+                        <span>Customized for your organization</span>
+                    </div>
+                    <div class="comparison-item">
+                        <span class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#0177c0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </span>
+                        <span>Built on Microsoft Power Platform</span>
+                    </div>
+                    <div class="comparison-item">
+                        <span class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#0177c0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </span>
+                        <span>Deploy in days, not quarters</span>
+                    </div>
+                    <div class="comparison-item">
+                        <span class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#0177c0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </span>
+                        <span>You own it—modify it anytime</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="demo-section">
+        <div class="container">
+            <h2>Try It Live</h2>
+            <p style="font-size: 18px; margin-bottom: 32px; opacity: 0.9;">Experience the app right now—no signup required.</p>
+            <div class="app-container">
+                <iframe 
+                    src="https://thatoseluku.github.io/DemoTicketManagementApp/" 
+                    title="Live One Desk Demo"
+                    loading="lazy"
+                    allow="clipboard-write">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="video-section">
+        <div class="container">
+            <h2>Watch the Walkthrough</h2>
+            <div class="video-container">
+                <iframe 
+                    src="https://www.youtube.com/embed/BEzyDdpTZno" 
+                    title="One Desk Video Demo"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section" id="get-started">
+        <div class="container">
+            <h2>Get It Free for 30 Days</h2>
+            <p class="subtitle">No obligation. No credit card required.</p>
+            <div class="form-container">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Smith" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Work Email</label>
+                        <input type="email" id="email" name="email" placeholder="john@company.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company Name</label>
+                        <input type="text" id="company" name="company" placeholder="Your Company" required>
+                    </div>
+                    <button type="submit" class="submit-button">Start Free Trial</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">Volhard Consulting</div>
+                <nav class="footer-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#about">About Us</a>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                © 2025 Volhard Consulting. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+>>>>>>> c061241 (Added logo):Index.HTML
 </html>
