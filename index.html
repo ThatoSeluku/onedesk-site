@@ -41,10 +41,10 @@
         }
 
         .logo {
-            width: 80px;
-            height: 80px;
-            border-radius: 12px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            width: auto;
+            height: auto;
+            max-width: 120px;
+            max-height: 120px;
         }
 
         .header-text {
@@ -217,6 +217,15 @@
 
         .comparison-title.positive {
             color: #0177c0;
+        }
+
+        .comparison-logo {
+            max-width: 80px;
+            max-height: 80px;
+            width: auto;
+            height: auto;
+            display: inline-block;
+            vertical-align: middle;
         }
 
         .comparison-item {
@@ -726,8 +735,8 @@
             }
 
             .logo {
-                width: 72px;
-                height: 72px;
+                max-width: 100px;
+                max-height: 100px;
             }
 
             .subheader {
@@ -795,8 +804,8 @@
             }
 
             .logo {
-                width: 64px;
-                height: 64px;
+                max-width: 80px;
+                max-height: 80px;
             }
 
             .hero {
@@ -868,6 +877,11 @@
             .comparison-title {
                 font-size: 1rem;
                 margin-bottom: 1rem;
+            }
+
+            .comparison-logo {
+                max-width: 50px;
+                max-height: 50px;
             }
 
             .comparison-item {
@@ -1113,7 +1127,7 @@
                                 <line x1="6" y1="6" x2="18" y2="18"></line>
                             </svg>
                         </span>
-                        <span>Random tech stack you didn't choose</span>
+                        <span>Legacy enterprise infrastructure</span>
                     </div>
                     <div class="comparison-item">
                         <span class="icon">
@@ -1136,7 +1150,7 @@
                 </div>
 
                 <div class="comparison-column highlight">
-                    <h2 class="comparison-title positive">OneDesk</h2>
+                    <h2 class="comparison-title positive"><img src="onedesk-logo.png" alt="OneDesk" class="comparison-logo"></h2>
                     <div class="comparison-item">
                         <span class="icon">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#0177c0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -1289,7 +1303,7 @@
     <section class="demo-section">
         <div class="container">
             <h2>Try It Live</h2>
-            <p style="font-size: 18px; margin-bottom: 32px; opacity: 0.9;">Experience the app right now—no signup required.</p>
+            <p style="font-size: 18px; margin-bottom: 32px; opacity: 0.9;">Experience the app right now - no signup required.</p>
             <div class="app-container">
                 <iframe 
                     src="https://thatoseluku.github.io/DemoTicketManagementApp/" 
