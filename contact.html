@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy | Volhard Consulting</title>
-    <meta name="description" content="Privacy Policy for Volhard Consulting - How we collect, use, and protect your information.">
+    <title>Contact Us | Volhard Consulting</title>
+    <meta name="description" content="Get in touch with Volhard Consulting - We're here to help with your IT ticketing and Power Platform needs.">
     <link rel="icon" type="image/png" sizes="32x32" href="onedesk-logo.png">
     <link rel="icon" type="image/png" sizes="16x16" href="onedesk-logo.png">
     <link rel="shortcut icon" type="image/png" href="onedesk-logo.png">
@@ -73,118 +73,189 @@
             margin: 0 auto;
         }
 
-        /* Privacy Page Specific */
-        .privacy-hero {
+        /* Contact Page Specific */
+        .contact-hero {
             background: linear-gradient(180deg, #062635 0%, #0a3447 100%);
             padding: clamp(3rem, 10vh, 5rem) 0 clamp(2rem, 6vh, 4rem);
             text-align: center;
         }
 
-        .privacy-hero .container {
+        .contact-hero .container {
             background-color: rgba(1, 119, 192, 0.08);
             border: 2px solid rgba(1, 119, 192, 0.2);
             border-radius: 8px;
             padding: 3rem 2rem;
         }
 
-        .privacy-title {
+        .contact-title {
             font-size: clamp(2rem, 6vw, 3rem);
             font-weight: 700;
             margin-bottom: 1rem;
             line-height: 1.2;
         }
 
-        .privacy-intro {
+        .contact-intro {
             font-size: clamp(1rem, 3vw, 1.25rem);
             opacity: 0.9;
             max-width: 50ch;
             margin: 0 auto;
         }
 
-        .privacy-meta {
-            margin-top: 1.5rem;
-            font-size: 0.875rem;
-            opacity: 0.7;
-        }
-
-        /* Content Section */
-        .privacy-content {
+        /* Contact Content */
+        .contact-content {
             background-color: #062635;
             padding: 4rem 0;
         }
 
-        .policy-section {
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .contact-info {
             background-color: rgba(12, 60, 86, 0.5);
             border: 1px solid rgba(1, 119, 192, 0.15);
             border-radius: 8px;
             padding: 2rem;
-            margin-bottom: 2rem;
-            opacity: 0;
-            transform: translateY(20px);
-            transition: all 0.6s ease-out;
         }
 
-        .policy-section.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .policy-section h2 {
+        .contact-info h2 {
             font-size: clamp(1.5rem, 4vw, 1.875rem);
             font-weight: 700;
             color: #0177c0;
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
         }
 
-        .policy-section h3 {
-            font-size: clamp(1.125rem, 3vw, 1.375rem);
+        .contact-method {
+            margin-bottom: 2rem;
+        }
+
+        .contact-method:last-child {
+            margin-bottom: 0;
+        }
+
+        .contact-method h3 {
+            font-size: 1.125rem;
             font-weight: 600;
-            margin-top: 1.5rem;
-            margin-bottom: 0.75rem;
+            margin-bottom: 0.5rem;
             color: #ffffff;
         }
 
-        .policy-section p {
-            font-size: clamp(0.9375rem, 2.5vw, 1.0625rem);
-            line-height: 1.7;
-            margin-bottom: 1rem;
+        .contact-method p {
+            font-size: 1rem;
             opacity: 0.9;
-        }
-
-        .policy-section ul {
-            list-style: none;
-            padding-left: 0;
-            margin: 1rem 0;
-        }
-
-        .policy-section ul li {
-            padding-left: 1.75rem;
-            position: relative;
-            margin-bottom: 0.75rem;
-            font-size: clamp(0.9375rem, 2.5vw, 1.0625rem);
             line-height: 1.6;
         }
 
-        .policy-section ul li:before {
-            content: "•";
-            position: absolute;
-            left: 0.5rem;
+        .contact-method a {
             color: #0177c0;
-            font-weight: 700;
-            font-size: 1.25rem;
-        }
-
-        .policy-section a {
-            color: #0177c0;
-            text-decoration: underline;
+            text-decoration: none;
             transition: opacity 0.3s ease;
         }
 
-        .policy-section a:hover {
+        .contact-method a:hover {
             opacity: 0.8;
+            text-decoration: underline;
         }
 
-        /* CTA Section */
+        .contact-method .icon {
+            display: inline-block;
+            margin-right: 0.5rem;
+            color: #0177c0;
+        }
+
+        /* Contact Form */
+        .contact-form-container {
+            background-color: rgba(12, 60, 86, 0.5);
+            border: 1px solid rgba(1, 119, 192, 0.15);
+            border-radius: 8px;
+            padding: 2rem;
+        }
+
+        .contact-form-container h2 {
+            font-size: clamp(1.5rem, 4vw, 1.875rem);
+            font-weight: 700;
+            color: #0177c0;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 0.9375rem;
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            background-color: #0c3c56;
+            color: #ffffff;
+            border: 2px solid transparent;
+            transition: border-color 0.3s ease;
+            font-family: inherit;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+        }
+
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #0177c0;
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        .submit-button {
+            width: 100%;
+            background-color: #0177c0;
+            color: #ffffff;
+            padding: 16px;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(1, 119, 192, 0.3);
+            min-height: 48px;
+            -webkit-tap-highlight-color: transparent;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+        }
+
+        .submit-button:hover {
+            background-color: #0191db;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(1, 119, 192, 0.4);
+        }
+
+        .submit-button:active {
+            transform: translateY(0);
+        }
+
+        /* Back Home Section */
         .back-home-section {
             background-color: #0c3c56;
             padding: 4rem 0;
@@ -313,21 +384,26 @@
                 max-height: 100px;
             }
 
-            .privacy-hero {
+            .contact-hero {
                 padding: 2.5rem 0 2rem;
             }
 
-            .privacy-hero .container {
+            .contact-hero .container {
                 padding: 2rem 1.5rem;
             }
 
-            .privacy-content {
+            .contact-content {
                 padding: 2.5rem 0;
             }
 
-            .policy-section {
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .contact-info,
+            .contact-form-container {
                 padding: 1.5rem;
-                margin-bottom: 1.5rem;
             }
 
             .back-home-section {
@@ -387,11 +463,12 @@
                 max-height: 80px;
             }
 
-            .privacy-hero .container {
+            .contact-hero .container {
                 padding: 1.5rem 1rem;
             }
 
-            .policy-section {
+            .contact-info,
+            .contact-form-container {
                 padding: 1.25rem;
             }
         }
@@ -410,93 +487,74 @@
         </div>
     </header>
 
-    <section class="privacy-hero">
+    <section class="contact-hero">
         <div class="container">
-            <h1 class="privacy-title">Privacy Policy</h1>
-            <p class="privacy-intro">We value your trust and transparency in how we handle your data.</p>
-            <p class="privacy-meta">Effective Date: October 25, 2025 | Website: VolhardConsulting.com</p>
+            <h1 class="contact-title">Get In Touch</h1>
+            <p class="contact-intro">Have questions about OneDesk or need a custom Power Platform solution? We're here to help.</p>
         </div>
     </section>
 
-    <section class="privacy-content">
+    <section class="contact-content">
         <div class="container">
-            <div class="policy-section">
-                <h2>1. Introduction</h2>
-                <p>Volhard Consulting ("we," "our," "us") respects your privacy. This Privacy Policy explains how we collect, use, and protect your information when you visit our website, interact with our content, or use our services.</p>
-            </div>
+            <div class="contact-grid">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
 
-            <div class="policy-section">
-                <h2>2. Information We Collect</h2>
-                <p>We collect the following types of data:</p>
-                <ul>
-                    <li><strong>Personal Information:</strong> Information you voluntarily provide, such as your name, email, or company details via forms or inquiries.</li>
-                    <li><strong>Usage Data:</strong> Automatically collected through cookies, pixels, and analytics tools to understand how you interact with our site.</li>
-                    <li><strong>Marketing and Retargeting Data:</strong> We use tracking technologies (LinkedIn Insight Tag, Meta Pixel, and Google Analytics) to measure engagement and display relevant advertising on other platforms.</li>
-                </ul>
-            </div>
+                    <div class="contact-method">
+                        <h3><span class="icon">📧</span> Email</h3>
+                        <p><a href="mailto:Thato@volhardconsulting.com">Thato@volhardconsulting.com</a></p>
+                        <p style="opacity: 0.7; font-size: 0.875rem; margin-top: 0.5rem;">We typically respond within 24 hours</p>
+                    </div>
 
-            <div class="policy-section">
-                <h2>3. How We Use Your Information</h2>
-                <p>We use your data to:</p>
-                <ul>
-                    <li>Improve website functionality, design, and performance.</li>
-                    <li>Understand user behavior for product and marketing optimization.</li>
-                    <li>Deliver personalized ads across the web (retargeting).</li>
-                    <li>Communicate updates, insights, and relevant offers when you consent.</li>
-                </ul>
-            </div>
+                    <div class="contact-method">
+                        <h3><span class="icon">🌍</span> Location</h3>
+                        <p>South Africa</p>
+                        <p style="opacity: 0.7; font-size: 0.875rem; margin-top: 0.5rem;">Serving clients across Africa and globally</p>
+                    </div>
 
-            <div class="policy-section">
-                <h2>4. Tracking Technologies</h2>
-                <p>We use:</p>
-                <ul>
-                    <li><strong>LinkedIn Insight Tag</strong> for anonymous conversion tracking and audience analytics.</li>
-                    <li><strong>Meta (Facebook) Pixel</strong> for remarketing and measuring campaign effectiveness.</li>
-                    <li><strong>Google Analytics</strong> to analyze web traffic and improve user experience.</li>
-                </ul>
-                <p>These tools may use cookies or similar technologies to track interactions across websites. You can manage or disable cookies through your browser settings.</p>
-            </div>
+                    <div class="contact-method">
+                        <h3><span class="icon">💼</span> What We Do</h3>
+                        <p>Power Platform Solutions • IT Ticketing Systems • Custom Power Apps • Power BI Dashboards • Power Automate Workflows</p>
+                    </div>
 
-            <div class="policy-section">
-                <h2>5. Data Sharing</h2>
-                <p>We do not sell your personal data. However, anonymized behavioral data may be shared with trusted analytics or advertising partners (LinkedIn, Meta, Google) strictly for performance measurement and optimization.</p>
-            </div>
+                    <div class="contact-method">
+                        <h3><span class="icon">⏱️</span> Response Time</h3>
+                        <p>Monday - Friday: 9:00 AM - 5:00 PM SAST</p>
+                        <p style="opacity: 0.7; font-size: 0.875rem; margin-top: 0.5rem;">After-hours inquiries will be answered the next business day</p>
+                    </div>
+                </div>
 
-            <div class="policy-section">
-                <h2>6. Data Retention</h2>
-                <p>We retain your information only as long as necessary to fulfill the purposes described above or as required by law.</p>
-            </div>
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h2>Send Us a Message</h2>
+                    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" placeholder="John Smith" required>
+                        </div>
 
-            <div class="policy-section">
-                <h2>7. Your Rights</h2>
-                <p>You may:</p>
-                <ul>
-                    <li>Request access to your personal data.</li>
-                    <li>Ask for correction or deletion of your data.</li>
-                    <li>Opt out of targeted advertising via your browser settings or the following:
-                        <ul style="margin-top: 0.5rem;">
-                            <li><a href="https://www.linkedin.com/psettings/guest-controls/retargeting-opt-out" target="_blank" rel="noopener noreferrer">LinkedIn Ad Settings</a></li>
-                            <li><a href="https://www.facebook.com/ads/preferences" target="_blank" rel="noopener noreferrer">Facebook Ad Preferences</a></li>
-                            <li><a href="https://adssettings.google.com" target="_blank" rel="noopener noreferrer">Google Ads Settings</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" placeholder="john@company.com" required>
+                        </div>
 
-            <div class="policy-section">
-                <h2>8. Security</h2>
-                <p>We use industry-standard encryption and secure hosting environments to protect your data from unauthorized access or misuse.</p>
-            </div>
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="company" placeholder="Your Company">
+                        </div>
 
-            <div class="policy-section">
-                <h2>9. Changes to This Policy</h2>
-                <p>We may update this Privacy Policy periodically. Any changes will be posted on this page with an updated "Effective Date."</p>
-            </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" placeholder="Tell us about your project or inquiry..." required></textarea>
+                        </div>
 
-            <div class="policy-section">
-                <h2>10. Contact</h2>
-                <p>For any privacy-related questions or requests, contact us at:</p>
-                <p><strong>Email:</strong> <a href="mailto:Thato@volhardconsulting.com">Thato@volhardconsulting.com</a></p>
+                        <input type="hidden" name="_subject" value="New Contact Form Submission - OneDesk">
+                        <input type="hidden" name="_next" value="https://thatoseluku.github.io/onedesk-site/thank-you.html">
+
+                        <button type="submit" class="submit-button">Send Message</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
@@ -515,7 +573,7 @@
                     <a href="privacy.html">Privacy Policy</a>
                     <a href="terms.html">Terms of Service</a>
                     <a href="contact.html">Contact</a>
-                    <a href="about.html">About Us</a>
+                    <a href="#about">About Us</a>
                 </nav>
             </div>
             <div class="social-links">
@@ -545,25 +603,5 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        // Scroll animation for policy sections
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.policy-section').forEach(section => {
-            observer.observe(section);
-        });
-    </script>
 </body>
 </html>
