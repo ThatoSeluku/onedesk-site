@@ -45,11 +45,59 @@
             text-align: center;
         }
 
+        .top-nav {
+            background-color: #0c3c56;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .top-nav-content {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .back-link {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 0.9375rem;
+            opacity: 0.85;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.375rem;
+        }
+
+        .back-link:hover {
+            opacity: 1;
+            color: #0177c0;
+        }
+
+        .back-arrow {
+            display: inline-block;
+            font-size: 1.125rem;
+        }
+
+        .logo-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
         .logo {
             width: auto;
             height: auto;
             max-width: 120px;
             max-height: 120px;
+        }
+
+        .logo-subtext {
+            font-size: 0.6875rem;
+            opacity: 0.7;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            color: #ffffff;
         }
 
         .header-text {
@@ -765,6 +813,10 @@
                 max-height: 100px;
             }
 
+            .logo-subtext {
+                font-size: 0.625rem;
+            }
+
             .subheader {
                 max-width: 100%;
                 padding: 0 0.5rem;
@@ -850,6 +902,10 @@
             .logo {
                 max-width: 80px;
                 max-height: 80px;
+            }
+
+            .logo-subtext {
+                font-size: 0.5625rem;
             }
 
             .hero {
@@ -1133,14 +1189,23 @@
     </style>
 </head>
 <body>
+    <nav class="top-nav">
+        <div class="container">
+            <div class="top-nav-content">
+                <a href="https://volhardconsulting.com" class="back-link">
+                    <span class="back-arrow">&larr;</span>
+                    <span>Back to Volhard Consulting</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
     <header>
         <div class="container">
             <div class="header-content">
+                <h1>OneDesk</h1>
                 <img src="onedesk-logo.png" alt="OneDesk Logo" class="logo">
-                <div class="header-text">
-                    <h1>OneDesk</h1>
-                    <p class="subheader">IT ticketing that's lean and fast</p>
-                </div>
+                <p class="logo-subtext">A Volhard Consulting Solution</p>
             </div>
         </div>
     </header>
